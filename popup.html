@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dumpert Download</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 100%;
+            width: 300px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app{
+            width: 100%;
+            height: auto;
+        }
+
+        #downloads{
+            list-style:none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #downloads li{
+            width: 100%;
+            text-align: center;
+            height: 25px;
+            float: left;
+            margin-right: 0px;
+            border-right: 1px solid #aaa;
+        }
+
+        #downloads li:last-child {
+            border-right: none;
+        }
+
+        #downloads li a {
+            text-decoration: none;
+            color: #ccc;
+            font: 25px/1 Helvetica, Verdana, sans-serif;
+            text-transform: uppercase;
+
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #downloads li a:hover {
+            color: #666;
+        }
+
+        #downloads li.active a {
+            font-weight: bold;
+            color: #333;
+        }
+
+        h2{
+            margin: 2px 0 2px;
+            text-align: center;
+        }
+
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+</head>
+<body>
+<div id="app">
+    <h2 id="title">Zoeken naar video...</h2>
+    <ul id="downloads">
+    </ul>
+</div>
+</body>
+</html>
+
